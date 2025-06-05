@@ -38,7 +38,9 @@ function renderPlayers() {
   players?.forEach((player, index) => {
     const playerCard = document.createElement("div");
     playerCard.classList.add(
-      "col-3",
+      "col-md-3",
+      "col-sm-6",
+      "col-12",
       "d-flex",
       "justify-content-between",
       "align-items-center",
