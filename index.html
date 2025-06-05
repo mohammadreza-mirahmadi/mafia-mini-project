@@ -11,7 +11,37 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="bg-dark text-white">
+    <main>
+      <div class="container pt-5" style="position: relative; height: 100vh">
+        <h2 class="text-center">Welcome to Mafia</h2>
+        <form class="w-75">
+          <div class="mb-3 mt-5">
+            <label for="addPlayers" class="form-label fs-5">New Player:</label>
+            <input
+              type="text"
+              class="form-control w-50"
+              id="addPlayers"
+              aria-describedby="emailHelp"
+            />
+            <p id="emptyErr" class="text-danger mt-1"></p>
+          </div>
+
+          <button type="submit" class="btn btn-danger">Add Player</button>
+        </form>
+
+        <p id="playersCount" class="mt-5 mb-2"></p>
+        <div id="listOfPlayers" class="row g-3"></div>
+        <div
+          class="w-25 row column-gap-2"
+          style="position: absolute; bottom: 4rem; right: 2rem"
+        >
+          <button id="newGameBtn" class="btn btn-danger col-4">New game</button>
+          <button id="nextBtn" class="btn btn-danger col-4">Next</button>
+        </div>
+      </div>
+    </main>
+
     <!-- To use other scripts in this linked script, it must be a module script type -->
     <script type="module" src="./js/main.js"></script>
   </body>
